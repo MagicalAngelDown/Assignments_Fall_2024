@@ -9,21 +9,42 @@ Black-          #000000
 
 body{
     background-color: #078ee8;
-
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
 }
 
 .wrapper{
     background-color: antiquewhite;
+    width: 96%;
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0 6%;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
-/* h1{
+.Tabbed {
+    margin-left: 300px;
+    margin-right: 40px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+h1{
     text-align: center;
+    margin-top: 5;
 }
 
 hr {
     height:0.1px;
-    width:50%;
+    width: 100%;
     color:#07d9e8;
     text-align:center;
-} */
+}
+
+strong{
+    color: #0743e8;
+}
+
 
