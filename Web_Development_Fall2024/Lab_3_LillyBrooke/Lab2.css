@@ -1,0 +1,59 @@
+/*
+Original color- #078ee8
+Deep Water-     #0743e8
+Light Blue-     #07d9e8
+Baby Blue-      #5bbafa
+Gray-           #777777
+Black-          #000000
+*/
+
+body {
+    /* background-color: #078ee8;  back-up color*/
+    background-image: linear-gradient(to right, #0743e8, #078ee8, #5bbafa, #07d9e8 ); /*This was too pretty not to do it, this is what i pictured */
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+}
+
+.wrapper {
+    background-color: antiquewhite;
+    width: 96%;
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0 6%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.Tabbed {
+    margin-left: 400px;
+    margin-right: 40px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.name {
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+
+.pretty{
+    font-style: italic;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 5px;
+}
+
+hr {
+    height:0.1px;
+    width: 100%;
+    color:#777777;
+    text-align:center;
+}
+
+strong {
+    color: #0743e8;
+}
