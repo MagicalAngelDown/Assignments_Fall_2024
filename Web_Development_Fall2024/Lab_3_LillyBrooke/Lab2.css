@@ -52,9 +52,33 @@ body {
     margin-right: 10px;
 }
 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+figure {
+    border: 1px #cccccc solid;
+    padding: 4px;
+    margin: auto;
+}
+  
+figcaption {
+    font-style: italic;
+    padding: 2px;
+    text-align: right;
+}
+
 h1 {
     text-align: center;
     margin-top: 5px;
+}
+
+h2 {
+    text-align: center;
+    size: 70px;
 }
 
 hr {
