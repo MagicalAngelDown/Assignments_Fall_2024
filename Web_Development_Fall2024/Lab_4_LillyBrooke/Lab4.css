@@ -15,6 +15,10 @@ body {
     padding-top: 50px;
 }
 
+a{
+    color: black;
+}
+
 .wrapper {
     background-color: antiquewhite;
     width: 96%;
@@ -52,6 +56,10 @@ body {
     margin-right: 10px;
 }
 
+.clear{
+    clear: both;
+}
+
 .center {
     display: block;
     margin-left: auto;
@@ -59,8 +67,57 @@ body {
     width: 50%;
 }
 
+header{
+    background-color: #777777;
+    padding: 10px;
+}
+
+#headmain{
+    background-color: #777777;
+}
+
+#headleft{
+    float: left;
+    width: 60%;
+
+}
+
+#headright{
+    float: right;
+    width: 40%;
+    text-align: right;
+    padding-bottom: 10px;
+
+}
+
+.nav-container {
+    background-color: #07d9e8;
+    text-align: center;
+    padding-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid black;
+  }
+  
+  nav table {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  nav table td {
+    padding: 10px; 
+}
+
+main{
+    width: auto;
+    float: left;
+}
+
+footer{
+    width: auto;
+    float: right;
+}
+
 figure {
-    border: 1px #cccccc solid;
     padding: 4px;
     margin: auto;
 }
