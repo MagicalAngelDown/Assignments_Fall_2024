@@ -25,10 +25,6 @@ a{
     width: 96%;
     margin: 0 auto;
     max-width: 960px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    padding-top: 20px;
 }
 
 .Tabbed {
@@ -71,7 +67,7 @@ a{
 
 header{
     background-color: #777777;
-    padding: 3px;
+    padding: 5px;
 }
 
 #headleft{
@@ -84,7 +80,6 @@ header{
     width: 40%;
     text-align: right;
     padding-bottom: 10px;
-
 }
 
 .nav-container {
@@ -93,6 +88,7 @@ header{
     padding-top: 5px;
     font-family: Arial, Helvetica, sans-serif;
     border: 2px solid black;
+    margin: 10px 20px 0 20px;
   }
   
   nav table {
@@ -107,11 +103,13 @@ header{
 main{
     width: auto;
     float: left;
+    padding: 20px;
 }
 
 footer{
     width: auto;
     float: right;
+    padding: 20px;
 }
 
 figure {
