@@ -90,14 +90,40 @@ header{
     border: 2px solid black;
     margin: 10px 20px 0 20px;
   }
-  
-  nav table {
+
+nav ul {
+    list-style: none;
+    padding: 0;
     width: 100%;
     margin: 0 auto;
-  }
-  
-  nav table td {
-    padding: 10px; 
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 auto;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    background-color: #5bbafa;
+    width: auto;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 main{
@@ -146,7 +172,13 @@ strong {
 
 strong2{
     color: black;
-    
+}
+
+.linklist{
+    background-color: #5bbafa;
+    text-align: center;
+    list-style: none;
+    border: 2px solid black;
 }
 
 @media screen and (max-width:1049px){
