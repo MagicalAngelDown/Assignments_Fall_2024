@@ -16,6 +16,7 @@ body {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
 .container {
     width: 80%;
     margin: 0 auto;
@@ -130,6 +131,7 @@ footer{
     width: auto;
     float: center;
     padding: 20px;
+    
 }
 
 .nav-container {
