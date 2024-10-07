@@ -1,20 +1,28 @@
-/*
+ /*
 Original Color (red)- #e4456d
 Green- #4dbf26
 Deep Blue- #264dbf
 */
 
 body {
-    /* background-color: #078ee8;  back-up color*/
     background-image: url("pictures/diner.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     padding-top: 50px;
     padding-bottom: 50px;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 a{
@@ -37,6 +45,14 @@ a{
 .right{
     float:right;
     margin-left: 10px;
+    max-width: 300px;
+}
+
+img.right {
+    float: right;
+    margin: 0 0 10px 10px;
+    max-width: 25%;
+    height: auto;
 }
 
 .left{
@@ -44,8 +60,58 @@ a{
     margin-right: 10px;
 }
 
+footer .left, footer .right {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+footer .left {
+    float: left;
+}
+
+footer .right {
+    float: right;
+    text-align: right;
+}
+
+footer .bottom {
+    clear: both;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.schedule {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.schedule h3 {
+    margin-bottom: 10px;
+}
+
+.schedule p, .schedule table {
+    margin: 0;
+}
+
+.schedule table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.schedule td {
+    padding: 5px 0;
+}
+
 header{
-    background-color: #e4456d;
+    background-color: #e74c3c;
     margin: 0 auto;
     border-radius: 15px 50px;
     padding: 20px;
@@ -81,7 +147,7 @@ nav ul {
     width: 100%;
     margin: 0 auto;
     display: flex;
-    align-items: center; /* Center items vertically */
+    align-items: center;
 }
 
 nav ul li {
@@ -145,8 +211,66 @@ hr {
     text-align: right;
   }
 
+  .content-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.content-container p {
+    flex: 1;
+    margin-right: 20px; 
+}
+
+.content-container img {
+    width: 300px; 
+    height: auto;
+}
+
+h2 {
+    color: #e74c3c;
+}
+
+h3 {
+    color: #3498db;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.special {
+    background-color: #f2f2f2;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    text-align: left;
+    overflow: auto;
+}
+
+.coupon-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.coupon {
+    border: 2px dashed #0a0501;
+    padding: 20px;
+    margin: 10px;
+    width: 45%;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #FFF8DC;
+}
+.coupon h2 {
+    margin-top: 0;
+    text-align: center;
+}
+.coupon p {
+    margin-bottom: 0;
+    text-align: center;
+}
+
 @media screen and (max-width:1049px){
-    /* main{background-color: aqua;} */
     #headmain{
         float:none ;
         width: auto;
@@ -163,18 +287,17 @@ hr {
         text-align: left;
     }
 
+    #headcenter{
+        float: none;
+        width: auto;
+    }
+
     main{
         float: none;
         width: auto;
         text-align: left;
     }
 
-    figcaption{
-        float: none;
-        width: auto;
-        text-align: left;
-    }
-    
     .right{
         float: none;
     
@@ -185,9 +308,7 @@ hr {
     }
 }
 
-
 @media print{
-    nav, footer {display: none;}
+    nav{display: none;}
     #headleft {display: none;}
-    img{display: none;}
-}
+} 
