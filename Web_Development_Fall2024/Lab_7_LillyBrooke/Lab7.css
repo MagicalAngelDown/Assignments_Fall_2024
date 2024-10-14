@@ -1,5 +1,10 @@
+a{
+    color: black;
+}
+
 .wrapper {
-    background-color: antiquewhite;
+    background-color: rgb(70, 139, 139);
+    border-radius: 25px;
     width: 96%;
     margin: 0 auto;
     max-width: 960px;
@@ -17,3 +22,158 @@ body{
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
+.name {
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+
+.right{
+    float:right;
+    margin-left: 10px;
+}
+
+.left{
+    float:left;
+    margin-right: 10px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.clear{
+    clear: both;
+}
+
+header{
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+
+.headerbg{
+    background-color: #e6dede;
+    border-radius: 25px;
+    width: 600px;
+    height: 280x;
+    margin: 0 auto;
+    opacity: .8;
+}
+
+.nav-container {
+    background-color: #4d0250;
+    text-align: center;
+    padding-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid black;
+    margin: 10px 20px 0 20px;
+  }
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 auto;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    background-color: #4d0250;
+    width: auto;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+main{
+    width: auto;
+    float: left;
+    padding: 20px;
+}
+
+footer{
+    width: auto;
+    float: right;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 5px;
+}
+
+h2{
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    size: 70px;
+}
+
+@media screen and (max-width:1049px){
+    #headmain{
+        float:none ;
+        width: auto;
+    }
+
+    #headleft{
+        float: none;
+        width: auto;
+    }
+
+    #headright{
+        float: none;
+        width: auto;
+        text-align: left;
+    }
+
+    #headcenter{
+        float: none;
+        width: auto;
+    }
+
+    main{
+        float: none;
+        width: auto;
+        text-align: left;
+    }
+
+    .right{
+        float: none;
+    
+    }
+
+    .left{
+        float: none;
+    }
+}
+
+@media print{
+    nav{display: none;}
+    #headleft {display: none;}
+} 
