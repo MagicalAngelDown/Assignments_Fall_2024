@@ -3,7 +3,7 @@ a{
 }
 
 .wrapper {
-    background-color: rgb(70, 139, 139);
+    background-color: rgb(70, 139, 139, .8);
     border-radius: 25px;
     width: 96%;
     margin: 0 auto;
@@ -57,12 +57,13 @@ header{
 }
 
 .headerbg{
-    background-color: #e6dede;
+    background-color: rgba(230,222,222,0.8);
     border-radius: 25px;
-    width: 600px;
-    height: 280x;
+    width: 500px;
+    height: auto;
     margin: 0 auto;
-    opacity: .8;
+    padding: 5px;
+    padding-bottom: 25px;
 }
 
 .nav-container {
