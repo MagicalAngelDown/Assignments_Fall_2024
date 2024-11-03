@@ -43,11 +43,27 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 20%;
+}
+
+.float-left {
+    float: left;
+    margin-right: 20px; /* Adjust spacing as needed */
+    margin-bottom: 10px; /* Adds space below the image */
 }
 
 .clear{
     clear: both;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 header{
@@ -73,7 +89,7 @@ header{
     font-family: Arial, Helvetica, sans-serif;
     border: 2px solid black;
     margin: 10px 20px 0 20px;
-  }
+}
 
 nav ul {
     list-style: none;
@@ -122,6 +138,11 @@ footer{
     padding: 20px;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 h1 {
     text-align: center;
     margin-top: 5px;
@@ -136,26 +157,15 @@ h3 {
     size: 70px;
 }
 
-@media screen and (max-width:1049px){
-    #headmain{
-        float:none ;
-        width: auto;
+@media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
     }
 
-    #headleft{
+    .float-left {
         float: none;
-        width: auto;
-    }
-
-    #headright{
-        float: none;
-        width: auto;
-        text-align: left;
-    }
-
-    #headcenter{
-        float: none;
-        width: auto;
+        display: block;
+        margin: 0 auto 20px auto;
     }
 
     main{
@@ -164,6 +174,12 @@ h3 {
         text-align: left;
     }
 
+    figcaption{
+        float: none;
+        width: auto;
+        text-align: left;
+    }
+    
     .right{
         float: none;
     
