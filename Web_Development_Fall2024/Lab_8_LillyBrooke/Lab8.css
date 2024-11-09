@@ -1,3 +1,6 @@
+
+
+
 a{
     color: black;
 }
@@ -50,6 +53,13 @@ body{
     float: left;
     margin-right: 20px; /* Adjust spacing as needed */
     margin-bottom: 10px; /* Adds space below the image */
+}
+
+hr {
+    height: 5px;
+    width: 100%;
+    color:#0e0e0e;
+    text-align:center;
 }
 
 .clear{
