@@ -1,0 +1,38 @@
+.profile-list {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    opacity: 0; 
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    background-color: rgb(108, 13, 163);
+    border-radius: 50px;
+    width: auto;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    margin-right: 30px;
+}
+
+.profile.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.description h2 {
+    margin: 0 0 10px;
+    
+}
+
+.description p {
+    margin: 0;
+}

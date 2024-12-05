@@ -1,18 +1,27 @@
+/* 6900ff
+00ff00 */
+
 a{
     color: black;
 }
 
 .background{
     background-image: url("img/background.webp");
-    opacity: 80%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
 }
 
+.rules-section {
+    background-image: linear-gradient(to right, #6900ff, #00ff00);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px auto;
+}
+
 .wrapper {
-    background-color: rgb(70, 139, 139, .8);
+    background-color: rgba(251, 255, 255, 0.8);
     border-radius: 25px;
     width: 96%;
     margin: 0 auto;
@@ -88,15 +97,6 @@ h1 {
     margin-top: 5px;
 }
 
-h2{
-    text-align: center;
-}
-
-h3 {
-    text-align: center;
-    size: 70px;
-}
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -112,11 +112,13 @@ header .container {
     max-width: 1200px;
     margin: auto;
     padding: 0 1rem;
+    background-color: #a267f5;
+    border-radius: 50px;
 }
 
 header h1 {
     font-size: 1.5rem;
-    color: #ff4500;
+    color: #00ff00;
 }
 
 header nav ul {
@@ -134,13 +136,12 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #ff4500;
+    color: #00ff00;
 }
 
 .hero {
     text-align: center;
     padding: 4rem 1rem;
-    background: url('hero-bg.jpg') no-repeat center center/cover;
 }
 
 .hero h2 {
@@ -151,20 +152,6 @@ header nav ul li a:hover {
 .hero p {
     margin: 0 0 1.5rem;
     font-size: 1.2rem;
-}
-
-.hero button {
-    padding: 0.8rem 1.5rem;
-    background-color: #ff4500;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s;
-}
-
-.hero button:hover {
-    background-color: #e03e00;
 }
 
 .cards {

@@ -1,0 +1,23 @@
+.button-container {
+    display: flex;
+    justify-content: center; /* Centers the button horizontally */
+    margin-top: 20px;
+  }
+
+  .button {
+    padding: 20px 40px;
+    background-color: #035203; 
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.8em;
+    cursor: pointer;
+    border: none;
+  }
+
+  @media (max-width: 600px) {
+    .button {
+      padding: 15px 30px;
+      font-size: 1.2em;
+    }
+  }
